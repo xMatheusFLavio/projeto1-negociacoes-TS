@@ -1,13 +1,13 @@
-import { Negociacao } from "./negociacao.js";
+import { Negociacao } from './negociacao.js';
 
 export class Negociacoes {
-    private negociacoes: Negociacao[] = [];            // Array<tipo> é o msm que [](vazio)
+    private negociacoes: Negociacao[] = [];
 
-    adiciona(negociacao: Negociacao) {
+    public adiciona(negociacao: Negociacao) {
         this.negociacoes.push(negociacao);
     }
 
-    lista(): ReadonlyArray<Negociacao> {               //ReadonlyArray<tipo> é o msm que readonly tipo[]
+    public lista(): readonly Negociacao[] {
         return this.negociacoes;
     }
 }

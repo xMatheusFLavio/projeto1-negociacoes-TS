@@ -1,6 +1,6 @@
 export class Negociacoes {
     constructor() {
-        this.negociacoes = []; // Array<tipo> é o msm que [](vazio)
+        this.negociacoes = [];
     }
     adiciona(negociacao) {
         this.negociacoes.push(negociacao);
